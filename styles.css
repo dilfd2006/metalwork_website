@@ -1,0 +1,353 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1143px;
+    margin: 0 auto;
+}
+.photo_logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+}
+.main_page{
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/main_bgc.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.navigation_main{
+   width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.list_main{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.link_list{
+    color: black;
+    font-size: 19px;
+}
+
+.main_text{
+    padding: 280px 150px;
+}
+
+.main_title, .our_product_title{
+    font-size: 45px;
+    color: white;
+}
+.main_paragraph{
+   font-size: 25px;
+   margin-top: 10px;
+    color: white;
+}
+
+.our_product_title{
+    color: #b01f24;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 30px;
+}
+    .carousel-wrapper {
+      position: relative;
+      width: 990px;    
+      margin-bottom: 50px;
+      padding: 30px;
+      border-radius: 16px;
+    background-color: rgba(201, 194, 194, 0.5);
+    }
+    .carousel-window {
+      overflow: hidden;
+      width: 100%;
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.4s ease;
+    }
+    .slide {
+      flex: 0 0 auto;
+      width: 300px;       
+      margin-right: 15px; 
+    }
+    .slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 32px;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .arrow.left  { left: -60px;  }
+    .arrow.right { right: -50px; }
+.our_production .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutus_paragraph{
+    font-family: 'Rubik';
+}
+.content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus_title{
+   font-weight: 700;
+   font-size: 25px;
+}
+
+.aboutus_paragraph{
+   font-weight: 400;
+   font-size: 18px;
+   margin-top: 30px;
+   padding: 15px 10px;
+   border-radius: 16px;
+   background-color: #fff;
+}
+.aboutus_paragraph span{
+  font-weight: 500;
+   font-size: 20px;
+}
+.aboutus_bottom{
+    margin-top: 30px;
+    font-weight: 600;
+   font-size: 22px;
+}
+.text_aboutus{
+    display: block;
+    max-width: 700px;
+    margin-right: 40px;
+}
+
+.photo_aboutus{
+    height: 100%;
+     border-radius: 16px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.aboutus{
+    background-color: rgba(176, 31, 36, 0.5);
+}
+.contacts_title{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.map_contacts{
+    padding: 30px 30px 0px 30px;
+    display: inline-block;
+    border-radius: 16px;
+    background-color: rgba(201, 194, 194, 0.5);
+}
+
+.contacts_information{
+    margin: 30px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #b01f24;
+    padding: 25px;
+}
+
+.address{
+    text-align: center;
+    margin: 15px 0 5px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.time{
+    text-align: center;
+    margin: 5px 0 15px 0;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.contacts_link{
+   color: #000;
+}
+
+.decrip_person{
+    margin-top: 9px;
+}
+
+.mail_footer{
+    color: black;
+    text-decoration: none;
+}
+
+.name_person{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.contacts_person{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.info_people{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.footer_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .our_product_title, .main_title{
+        font-size: 36px;
+    }
+    .main_paragraph{
+        font-size: 16px;
+    }
+  .carousel-wrapper {
+      width: 290px;    
+      padding: 20px;
+    }
+    .slide {
+      width: 250px;       
+    }
+    .list_main{
+        display: none;
+    }
+
+    .arrow.left{
+        left: -30px;
+    }
+
+    .arrow.right{
+        right: -30px;
+    }
+
+    .main_text{
+        padding: 200px 50px;
+    }
+
+    .img_container{
+        display: none;
+    }
+    .content{
+        padding-left: 9%;
+    }
+    .map_contacts iframe{
+        width: 350px;
+        height: 200px;
+  }
+
+  .map_contacts{
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .name_person{
+    text-align: center;
+  }
+  .info_people{
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .person{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 70%;
+    justify-content: center;
+  }
+  .person p{
+    text-align: center;
+    font-size: 15px;
+  }
+  .person a{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .contacts_information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .name_person{
+    max-width: 40%;
+  }
+  .contacts_person{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+  }
+  .contacts_person a{
+     display: inline-block;
+  }
+
+  .address{
+    font-size: 20px;
+  }
+  .time{
+    margin: 0;
+  }
+}
