@@ -85,7 +85,6 @@ a {
     margin: 30px;
 }
     .carousel-wrapper {
-        display: inline-block;
       position: relative;
       width: 990px;    
       margin-bottom: 50px;
@@ -94,7 +93,6 @@ a {
     background-color: rgba(201, 194, 194, 0.5);
     }
     .carousel-window {
-        height: 250px;
       overflow: hidden;
       width: 100%;
     }
@@ -109,9 +107,10 @@ a {
     }
     .slide img {
       display: block;
-      width: 100%;
-      height: 250px;
-      border-radius: 16px;
+  width: 300px;        
+  height: 250px;      
+  object-fit: cover;    
+  border-radius: 16px;
     }
 
     .arrow {
@@ -174,7 +173,9 @@ a {
 }
 
 .photo_aboutus{
-    height: 500px;
+      width: 400px;         
+  height: 500px;        
+  object-fit: cover;
      border-radius: 16px;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.6);
 }
@@ -213,6 +214,9 @@ a {
     margin: 15px 0 5px 0;
     font-weight: 500;
     font-size: 20px;
+}
+.slide:last-child {
+  margin-right: 0;
 }
 
 .time{
@@ -256,6 +260,19 @@ a {
     align-items: center;
     justify-content: space-between;
 }
+.info_footer_contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 16px;
+}
+
+.mail_footer{
+    margin-left: 30px;
+    font-size: 20px;
+}
 
 @media (max-width: 768px) {
     .our_product_title, .main_title{
@@ -264,23 +281,38 @@ a {
     .main_paragraph{
         font-size: 16px;
     }
-  .carousel-wrapper {
-      width: 290px;    
-      padding: 20px;
-    }
-    .slide {
-      width: 250px;       
-    }
-    .list_main{
+ .carousel-wrapper {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .carousel-window {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slide {
+    width: 100%;
+    margin-right: 15px;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .arrow.left {
+    left: 5px;
+  }
+
+  .arrow.right {
+    right: 5px;
+  }
+   .list_main{
         display: none;
-    }
-
-    .arrow.left{
-        left: -30px;
-    }
-
-    .arrow.right{
-        right: -30px;
     }
 
     .main_text{
@@ -290,7 +322,6 @@ a {
     .img_container{
         display: none;
     }
-
     .content{
         padding-left: 9%;
     }
@@ -317,12 +348,17 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 70%;
     justify-content: center;
+    margin-top: 10px;
   }
   .person p{
     text-align: center;
     font-size: 15px;
+  }
+  .info_people{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
   }
   .person a{
     font-size: 15px;
@@ -342,6 +378,10 @@ a {
     display: flex;
     margin: 0;
     flex-direction: column;
+  }
+  .contacts_title{
+    font-size: 25px;
+    margin-bottom: 0;
   }
   .contacts_person a{
      display: inline-block;
