@@ -23,7 +23,10 @@ body{
 a {
     text-decoration: none;
 }
-
+a:hover{
+   text-decoration: underline;
+   text-underline-offset: 4px;
+}
 .container{
     max-width: 1143px;
     margin: 0 auto;
@@ -265,9 +268,27 @@ a {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgba(255,255,255,0.8);
     border-radius: 16px;
 }
+
+.info_footer_contacts a{
+  font-size: 18px;
+}
+
+.info_footer_contacts a:hover{
+   text-decoration: underline;
+}
+
+
+.info_footer_contacts img{
+   width: 25px;
+   height: 25px;
+}
+
+.info_footer_contacts img:hover{
+   scale: 1.25;
+}
+
 
 .mail_footer{
     margin-left: 30px;
@@ -393,4 +414,5 @@ a {
   .time{
     margin: 0;
   }
+  
 }

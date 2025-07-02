@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updatePosition();
   });
 
-  // Обновить при загрузке и при изменении размера окна
   updateMeasurements();
   window.addEventListener('resize', () => {
     updateMeasurements();
