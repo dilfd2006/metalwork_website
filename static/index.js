@@ -20,16 +20,23 @@ document.addEventListener('DOMContentLoaded', () => {
   function updatePosition() {
     slidesEl.style.transform = `translateX(-${offset}px)`;
   }
+prevBtn.addEventListener('click', () => {
+  const newOffset = offset - slideWidth;
+  if (newOffset < 0) return; // уже на первом слайде, не двигаемся
 
-  prevBtn.addEventListener('click', () => {
-    offset = Math.max(offset - slideWidth, 0);
-    updatePosition();
-  });
+  offset = newOffset;
+  updatePosition();
+});
 
-  nextBtn.addEventListener('click', () => {
-    offset = Math.min(offset + slideWidth, maxOffset);
-    updatePosition();
-  });
+nextBtn.addEventListener('click', () => {
+  const newOffset = offset + slideWidth;
+  if (newOffset > maxOffset) return; // уже на последнем слайде, не двигаемся
+
+  offset = newOffset;
+  updatePosition();
+});
+
+
 
   updateMeasurements();
   window.addEventListener('resize', () => {
