@@ -369,7 +369,16 @@ a:hover{
    .list_main{
         display: none;
     }
+  .aboutus_paragraph{
+    font-size: 14px;
+  }
 
+  .aboutus_title{
+    font-size: 21px;
+  }
+  .aboutus_bottom{
+    font-size: 18px;
+  }
     .main_text{
         padding: 200px 50px;
     }
@@ -462,4 +471,39 @@ a:hover{
    height: 15px;
 }
   
+}
+
+
+@media (max-width: 450px) {
+   .map_contacts iframe{
+        width: 280px;
+        height: 130px;
+  }
+  .address{
+    font-size: 14px;
+  }
+  .time{
+    font-size: 11px;
+}
+.our_product_title, .main_title{
+  font-size: 30px;
+}
+.main_paragraph{
+  font-size: 14px;
+}
+.footer .icon{
+  display: none;
+}
+.footer_info{
+  justify-content: center;
+}
+.info_footer_contacts{
+  margin-right: 0;
+}
+.map_contacts{
+  margin-bottom: 0;
+}
+.info_people{
+  margin-bottom: 40px;
+}
 }
